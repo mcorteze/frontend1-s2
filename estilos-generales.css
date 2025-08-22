@@ -1,0 +1,172 @@
+/* Reset y tipografía */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 13px;
+  color: #005d89;
+  background: #f8fafc;
+}
+
+/* Utilidades */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.lead {
+  margin-top: 8px;
+  color: #e6f5fb;
+  max-width: 60ch;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Encabezado con GIF + capa de color con transparencia */
+.site-header {
+  color: #e0f3f9;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-image:
+    linear-gradient(rgba(0, 93, 137, 0.72), rgba(0, 93, 137, 0.72)),
+    url("https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2019/09/ragnorak-gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#hero-title {
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* Navegación */
+.site-nav {
+  font-size: 16px;
+  font-weight: 400;
+  background: #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 12px 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
+
+
+.nav-list li:nth-child(3) a {
+  font-weight: 600;
+}
+
+/* Productos */
+.productos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.producto {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto:hover {
+  box-shadow: 0 1px 6px 0 rgba(0, 141, 171, 0.22);
+}
+
+.producto-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.producto-media img {
+  height: 150px;
+  display: block;
+  border-radius: 8px;
+}
+
+.producto-info h3 {
+  margin: 16px 0;
+}
+
+.meta {
+  color: #475569;
+  margin-top: 6px;
+}
+
+/* Selector de clase combinado para precios destacados */
+.precio {
+  color: #ff4a8f;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.precio.destacado {
+  color: #c81e69;
+}
+
+
+.productos > li:nth-child(2) .producto-info h3 {
+  border-left: 4px solid #005d89;
+  padding-left: 8px;
+}
+
+/* Pie de página */
+.site-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  margin-top: 24px;
+  padding: 24px 0;
+}
+
+.site-footer a {
+  color: #e2e8f0;
+}
+
+
+#contacto a:hover {
+  text-decoration: underline;
+}

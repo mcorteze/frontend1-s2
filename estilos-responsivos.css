@@ -1,0 +1,56 @@
+/* Pensado para pantallas pequeñas */
+
+body {
+  font-size: 15px;
+}
+
+/* Contenedor general */
+.container {
+  padding: 12px;
+}
+
+/* Encabezado  compacto */
+.site-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Lista de productos: columna única */
+.productos {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+/* Tarjeta: apilar imagen y texto */
+.producto-container {
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Imagen: ancho completo y altura automática */
+.producto-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Tipografía y espaciados dentro de la tarjeta */
+.producto-info h3 {
+  font-size: 1.05rem;
+  margin: 8px 0 6px;
+}
+
+.meta {
+  font-size: 0.95rem;
+}
+
+.precio {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* salto de linea para el menu*/
+.nav-list {
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
