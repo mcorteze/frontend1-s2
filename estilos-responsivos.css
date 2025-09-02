@@ -1,56 +1,49 @@
-/* Pensado para pantallas pequeñas */
+@media (min-width: 768px) {
+  .productos { grid-template-columns: repeat(2, 1fr); }
 
-body {
-  font-size: 15px;
+  .producto-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .producto-media {
+    flex: 0 0 160px;
+    min-width: 0;
+  }
+
+  .producto-media img {
+    width: 100%;
+    height: 160px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .producto-info {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .producto-container { height: 100%; }
+
+  .producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100% !important;
+  }
 }
 
-/* Contenedor general */
-.container {
-  padding: 12px;
-}
+@media (min-width: 1024px) {
+  .productos { grid-template-columns: repeat(3, 1fr); }
 
-/* Encabezado  compacto */
-.site-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+  .producto-container { height: 100%; }
 
-/* Lista de productos: columna única */
-.productos {
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-
-/* Tarjeta: apilar imagen y texto */
-.producto-container {
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* Imagen: ancho completo y altura automática */
-.producto-media img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Tipografía y espaciados dentro de la tarjeta */
-.producto-info h3 {
-  font-size: 1.05rem;
-  margin: 8px 0 6px;
-}
-
-.meta {
-  font-size: 0.95rem;
-}
-
-.precio {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-
-/* salto de linea para el menu*/
-.nav-list {
-  flex-wrap: wrap;
-  gap: 8px 14px;
+  .producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100% !important;
+  }
 }
