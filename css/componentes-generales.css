@@ -1,79 +1,44 @@
-* { box-sizing: border-box; }
+/* Reset de box model */
+* { 
+  box-sizing: border-box; 
+}
 
-html, body { margin: 0; padding: 0; }
+/* Reset de márgenes */
+html, body { 
+  margin: 0; 
+  padding: 0; 
+}
 
+/* Estilos base del body */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.5;
-  font-size: 13px;
+  font-size: .875em;
   color: #005d89;
   background: #f8fafc;
 }
 
-.container {
-  width: min(92%, 1100px);
-  margin-inline: auto;
-  padding-block: 16px;
-  padding-inline: clamp(12px, 4vw, 32px);
-}
-
+/* Texto destacado */
 .lead {
   margin-top: 8px;
   color: #e6f5fb;
   max-width: 60ch;
 }
 
+/* Accesibilidad: contenido oculto visualmente */
 .visually-hidden {
-  position: absolute; width: 1px; height: 1px;
-  padding: 0; margin: -1px; overflow: hidden;
-  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  position: absolute; 
+  width: 1px; 
+  height: 1px;
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); 
+  white-space: nowrap; 
+  border: 0;
 }
 
-.site-header {
-  color: #e0f3f9;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  background-image:
-    linear-gradient(rgba(0, 93, 137, 0.72), rgba(0, 93, 137, 0.72)),
-    url("https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2019/09/ragnorak-gif.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hero-title {
-  letter-spacing: 0.3px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-}
-
-.site-nav {
-  font-size: 16px;
-  font-weight: 400;
-  background: #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-list a {
-  display: block;
-  padding: 12px 8px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-list a:hover,
-.nav-list a:focus { text-decoration: underline; }
-
-.nav-list li:nth-child(3) a { font-weight: 600; }
-
+/* Título de sección */
 .seccion-titulo {
   font-weight: 700;
   font-size: 1.15rem;
@@ -81,6 +46,7 @@ body {
   color: #0b4662;
 }
 
+/* Lista de productos */
 .productos {
   list-style: none;
   margin: 0;
@@ -92,6 +58,7 @@ body {
   min-width: 0;
 }
 
+/* Tarjeta de producto */
 .producto {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -103,10 +70,12 @@ body {
   min-width: 0;
 }
 
+/* Hover de producto */
 .producto:hover {
   box-shadow: 0 1px 6px 0 rgba(0, 141, 171, 0.22);
 }
 
+/* Contenedor interno de producto */
 .producto-container {
   display: flex;
   flex-direction: column;
@@ -115,6 +84,7 @@ body {
   min-width: 0;
 }
 
+/* Imagen del producto */
 .producto-media {
   display: grid;
   place-items: center;
@@ -135,6 +105,7 @@ body {
   display: block;
 }
 
+/* Información del producto */
 .producto-info {
   display: flex;
   flex-direction: column;
@@ -144,15 +115,16 @@ body {
 
 .producto-info h3 {
   margin: 8px 0 6px;
-  font-size: .95rem;
+  font-size: 1.1em;
   overflow-wrap: anywhere;
 }
 
 .producto-info p {
   text-align: justify;
-  font-size: .8rem;
+  font-size: .875em;
 }
 
+/* Texto adicional */
 .meta {
   color: #616161;
   margin-top: 6px;
@@ -160,6 +132,7 @@ body {
   overflow-wrap: anywhere;
 }
 
+/* Precio */
 .precio {
   color: #ff4a8f;
   font-weight: 700;
@@ -167,20 +140,17 @@ body {
 }
 
 .precio {
-  font-size: 1.1rem !important;
+  font-size: 1.1em !important;
 }
 
-.productos > li:nth-child(2) .producto-info h3 {
+/* Título de sección con borde */
+.titulo-seccion {
   border-left: 4px solid #005d89;
   padding-left: 8px;
 }
 
-.site-footer {
-  background: #0f172a;
-  color: #cbd5e1;
-  margin-top: 24px;
-  padding: 24px 0;
+/* Descripción secundaria */
+.descripcion-seccion {
+  color: var(--color-text-secondary);
+  font-size: 1em !important;
 }
-
-.site-footer a { color: #e2e8f0; }
-#contacto a:hover { text-decoration: underline; }

@@ -1,265 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tienda Gamer — Especial Ragnarok Online</title>
-    <link rel="stylesheet" href="estilos-generales.css" />
-    <link rel="stylesheet" href="estilos-responsivos.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Gamer — Especial Ragnarok Online</title>
 
-  <body>
-    <!-- Encabezado -->
-    <header class="site-header">
-      <div class="container">
-        <h1 id="hero-title">Ragnarok Online - Tienda Virtual</h1>
-        <p class="lead">Juegos inspirados en las mejores clases de Ragnarok Online clásico.</p>
-      </div>
-    </header>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Navegación -->
-    <nav class="site-nav" aria-label="Navegación principal">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilos-generales.css" />
+  <link rel="stylesheet" href="css/estilos-responsivos.css" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body class="landing">
+  <!-- Header -->
+  <header class="site-header text-center">
+    <div class="container">
+      <h1 id="hero-title">Ragnarok Online - Tienda Virtual</h1>
+      <p class="lead">Juegos inspirados en las mejores clases de Ragnarok Online clásico.</p>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-custom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Tienda Gamer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Contenido principal -->
-    <main id="inicio" class="container">
-      <!-- Sección Productos -->
-    <section id="productos" aria-labelledby="titulo-productos">
-      <h2 id="titulo-productos">Productos destacados</h2>
+  <!-- Hero -->
+  <main id="inicio" class="hero-full">
+    <!-- Fondo -->
+    <img class="hero-bg" src="https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2019/09/ragnorak-gif.gif" alt="Ragnarok Online">
 
-      <ul class="productos">
-        <!-- Producto 1 Knight -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/564x/5e/1b/cc/5e1bcc4689b1f3aba0a345101ac91b7a.jpg"
-                alt="Ilustración de un Lord Knight cabalgando en campo abierto"
-              />
-            </figure>
-            <div class="producto-info">
-              <div class="producto-info-elementos">
-                <h3>Caballería de Prontera: Juramento del Lord Knight</h3>
-                <p>
-                  Aventura de <strong>mundo abierto</strong> con exploración de reinos, asedios a castillos y misiones de caballería.
-                  Lidera escoltas, defiende rutas y decide el destino de Prontera en una campaña dinámica.
-                </p>
-                <p class="meta">
-                  <em>Género:</em> Acción y exploración • <em>Enfoque:</em> Montura, liderazgo, defensa de territorios
-                </p>
-              </div>
-              <p class="precio">Precio: $29.990</p>
-            </div>
-          </div>
-        </li>
+    <!-- Overlay -->
+    <img class="hero-overlay" src="assets/img/tv.gif" alt="">
 
-        <!-- Producto 2 Champion -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://cosplayfu-website.s3.amazonaws.com/_Photo/character/mini/12061.jpg"
-                alt="Champion en pose de combate dentro de una arena"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Camino del Puño: Crónicas del Champion</h3>
-              <p>
-                Progresión de <strong>arenas y duelos</strong> con técnicas espirituales, control del Ki y desafíos por rangos.
-                Supera pruebas de temple y precisión para dominar combinaciones legendarias.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Lucha y desafíos • <em>Enfoque:</em> Timing, combos, gestión de espíritu
-              </p>
-              <p class="precio">Precio: $24.990</p>
-            </div>
-          </div>
-        </li>
+    <!-- Degradado -->
+    <span class="hero-vignette" aria-hidden="true"></span>
 
-        <!-- Producto 3 Whitesmith -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/736x/64/b7/63/64b76364502ba0bc8ce918d03cc982d6.jpg"
-                alt="Taller de forja con yunques, engranajes y herramientas"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Forja Maestra: Taller de Hollgrehenn</h3>
-              <p>
-                Simulador de <strong>economía y manufactura</strong>: refina, forja y negocia con comerciantes y aventureros.
-                Optimiza recursos, gestiona pedidos y desbloquea planos únicos para equipamiento épico.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Gestión y simulación • <em>Enfoque:</em> Crafting, comercio, optimización
-              </p>
-              <p class="precio">Precio: $21.990</p>
-            </div>
-          </div>
-        </li>
+    <!-- Contenido -->
+    <div class="hero-content container">
+      <h1 class="hero-title">Prontera Store<br><span class="muted">Videojuegos basados en Ragnarok Online</span></h1>
+      <p class="hero-sub">Explora coleccionables inspirados en el juego clásico.</p>
+      <a href="/pages/inicio.html" class="hero-cta">Inicio</a>
+    </div>
+  </main>
 
-        <!-- Producto 4 Whitesmith -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/736x/d8/12/58/d812583f33f08cd11160c516ed651292.jpg"
-                alt="Taller de forja con yunques, engranajes y herramientas"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Aceros de Einbroch: Imperio Artesano</h3>
-              <p>
-                Tycoon <strong>steampunk</strong> de manufactura. Construye líneas de producción, mejora hornos y automatiza talleres
-                mientras compites por contratos de ciudades industriales y reputación entre gremios.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Gestión/Tycoon • <em>Enfoque:</em> Cadenas de producción, planos raros, subasta de materiales
-              </p>
-              <p class="precio">Precio: $22.990</p>
-            </div>
-          </div>
-        </li>
+  <!-- Footer -->
+  <footer id="contacto" class="site-footer text-center py-4">
+    <div class="container">
+      <p>📍 Dirección: Prontera Norte #9970</p>
+      <p>📧 Correo: kafra.runemidgard@ragnarok.com</p>
+      <p>
+        Síguenos en:
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> ·
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> ·
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </div>
+  </footer>
 
-        <!-- Producto 5 Champion -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/736x/98/ce/13/98ce1398a50c83a8b17d19bd58a0163e.jpg"
-                alt="Guerrero en postura de combate en un dojo"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Monasterio del Zén: Torneos Ascendentes</h3>
-              <p>
-                <strong>Roguelite de arenas</strong> donde cada victoria otorga mantras y técnicas espirituales. Arriesga tu Ki para
-                potenciar el <em>Asura</em>, encadena parries perfectos y enfréntate a maestros de estilos únicos.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Lucha/Roguelite • <em>Enfoque:</em> Builds de técnicas, riesgo-recompensa, boss rush
-              </p>
-              <p class="precio">Precio: $25.990</p>
-            </div>
-          </div>
-        </li>
-
-        <!-- Producto 6 Whitesmith -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://write.ratemyserver.net/wp-content/uploads/2008/09/title2.jpg"
-                alt="Mapa de rutas comerciales con engranajes y rieles"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Rutas de Carbón: Tren Mercante de Midgard</h3>
-              <p>
-                Gestiona un <strong>imperio logístico</strong>: diseña vías férreas, asegura caravanas y sincroniza talleres
-                para maximizar ganancias entre Einbroch, Geffen y Payon con eventos de mercado dinámicos.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Simulación/Logística • <em>Enfoque:</em> Rutas óptimas, carga vs. valor, contratos dinámicos
-              </p>
-              <p class="precio">Precio: $23.990</p>
-            </div>
-          </div>
-        </li>
-
-        <!-- Producto 7 Champion -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/236x/c4/a1/be/c4a1be2b638b6109a48ad72ef9a4215e.jpg"
-                alt="Artista marcial ejecutando un golpe en una arena iluminada"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Ritmo de Asura: Puños del Amanecer</h3>
-              <p>
-                Híbrido de <strong>ritmo y combate</strong>. Pulsa al compás para cargar espíritu, encadena <em>combos</em> y libera
-                técnicas secretas en duelos estilizados con tablas de clasificación globales.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Ritmo/Acción • <em>Enfoque:</em> Precisión musical, chain combos, entrenamiento de dojo
-              </p>
-              <p class="precio">Precio: $24.490</p>
-            </div>
-          </div>
-        </li>
-
-        <!-- Producto 8 -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/736x/cb/85/3c/cb853cc59cad11ef5d8a94f638929111.jpg"
-                alt="Caballeros con lanzas avanzando hacia una fortaleza antigua"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Cruzadas de Glast Heim: Lanzas y Honor</h3>
-              <p>
-                Comando táctico de <strong>escuadrones montados</strong>. Alterna entre órdenes de formación y acción directa para
-                romper líneas enemigas, rescatar aldeas y recuperar reliquias olvidadas.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Táctica/Acción • <em>Enfoque:</em> Cargas a caballo, moral de tropas, asedios puntuales
-              </p>
-              <p class="precio">Precio: $28.990</p>
-            </div>
-          </div>
-        </li>
-
-        <!-- Producto 9 -->
-        <li class="producto">
-          <div class="producto-container">
-            <figure class="producto-media">
-              <img
-                src="https://i.pinimg.com/736x/d9/94/23/d99423b2a5ac74c8ab5e03f175384dc4.jpg"
-                alt="Duelos de caballeros en un campo de batalla con estandartes"
-              />
-            </figure>
-            <div class="producto-info">
-              <h3>Estandartes de Rune-Midgard: Guerra de Fronteras</h3>
-              <p>
-                Multijugador por objetivos con <strong>duelos montados</strong>, captura de baluartes y sinergias entre escuadrones.
-                Personaliza tu lanza, estandarte y montura para liderar la vanguardia.
-              </p>
-              <p class="meta">
-                <em>Género:</em> Acción/Multijugador • <em>Enfoque:</em> Control de territorio, roles de caballería, progresión de clanes
-              </p>
-              <p class="precio">Precio: $27.490</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer id="contacto" class="site-footer" aria-labelledby="titulo-contacto">
-      <div class="container">
-        <h2 id="titulo-contacto" class="visually-hidden">Contacto</h2>
-        <p>📍 Dirección: Prontera Norte #9970, Reino de Rune-Midgard</p>
-        <p>📧 Correo: kafra.runemidgard@ragnarok.com</p>
-        <p>
-          Síguenos en:
-          <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> ·
-          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> ·
-          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
-        </p>
-      </div>
-    </footer>
-  </body>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
